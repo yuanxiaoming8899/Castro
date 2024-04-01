@@ -1,121 +1,78 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2301848.svg)](https://doi.org/10.5281/zenodo.2301848)
-[![DOI](https://joss.theoj.org/papers/10.21105/joss.02513/status.svg)](https://doi.org/10.21105/joss.02513)
-[![AMReX](https://amrex-codes.github.io/badges/powered%20by-AMReX-red.svg)](https://amrex-codes.github.io)
-[![yt-project](https://img.shields.io/static/v1?label="works%20with"&message="yt"&color="blueviolet")](https://yt-project.org)
-[![github pages](https://github.com/AMReX-Astro/Castro/workflows/github%20pages/badge.svg)](https://github.com/AMReX-Astro/Castro/actions?query=workflow%3A%22github+pages%22)
-[![coverity](https://scan.coverity.com/projects/29689/badge.svg)](https://scan.coverity.com/projects/amrex-astro-castro)
-
-![Castro](https://github.com/AMReX-Astro/Castro/blob/development/Util/logo/castro_logo_hot_200.png)
-
-*an adaptive mesh, astrophysical radiation hydrodynamics simulation code*
-
-`Castro` is an adaptive-mesh compressible radiation / MHD / hydrodynamics
-code for astrophysical flows.  `Castro` supports a general equation of
-state, full Poisson gravity, and reactive flows, and is parallelized
-with MPI + OpenMP for CPUs and MPI + CUDA for NVIDIA GPUs and MPI + HIP for
-AMD GPUs.
-
-More information on Castro can be found here:
-
-http://amrex-astro.github.io/Castro/
-
-
-## Getting Started
-
-The "Getting Started" section of the User's Guide walks you
-through running your first problem:
-
-https://amrex-astro.github.io/Castro/docs/getting_started.html
-
-This will have you clone Castro and its dependencies (AMReX and
-StarKiller Microphysics),
-
-The User's Guide in written in re-structured text using Sphinx, with
-the source in `Castro/Docs/`, and is built automatically
-from the `development` branch.
-
-## Running at Supercomputer Centers
-
-Documentation for running the AMReX Astrophysics codes at popular
-supercomputing centers can be found at:
-https://amrex-astro.github.io/workflow/
-
-## Development Model:
-
-Development generally follows the following ideas:
-
-  * New features are committed to the `development` branch.
-
-    Nightly regression testing is used to ensure that no answers
-    change (or if they do, that the changes were expected).
-
-    If a change is critical, we can cherry-pick the commit from
-    `development` to `main`.
-
-  * Contributions are welcomed from anyone in the form of a pull
-    request from your fork of Castro, targeting the `development`
-    branch. (If you mistakenly target `main`, we can change it
-    for you.)
-
-    Please add a line to `CHANGES.md` summarizing your change if it
-    is a bug fix or new feature.  Reference the PR or issue as
-    appropriate. Additionally, if your change fixes a bug (or if
-    you find a bug but do not fix it), and there is no current
-    issue describing the bug, please file a separate issue describing
-    the bug, regardless of how significant the bug is. If possible,
-    in both the `CHANGES.md` file and the issue, please cite the pull
-    request numbers or git commit hashes where the problem was
-    introduced and fixed, respectively.
-
-    We will squash commits upon merge to have a clean history.
-    *Please ensure that your PR title and and the PR summary field are
-    descriptive, since these will be used for a squashed commit message.*
-
-  * On the first workday of each month, we perform a merge of
-    `development` into `main`, in coordination with `AMReX`,
-    `Maestro`, and `Microphysics`.  For this merge to take place, we
-    need to be passing the regression tests.
-
-    To accommodate this need, we close the merge window into
-    `development` a few days before the merge day.  While the merge
-    window is closed, only bug fixes should be pushed into
-    `development`.  Once the merge from `development` -> `main` is
-    done, the merge window reopens.
-
-
-## Core Developers
-
-People who make a number of substantive contributions will be named
-"core developers" of Castro.  The criteria for becoming a core
-developer are flexible, but generally involve one of the following:
-
-  * 10 non-merge commits to `Castro/Source/` or `Castro/Docs/`
-    or one of the problems that is not your own science problem *or*
-
-  * addition of a new algorithm / module  *or*
-
-  * substantial input into the code design process or testing
-
-Core developers will be recognized in the following ways:
-
-  * invited to the group's slack team
-
-  * listed in the User's Guide and website as a core developer
-
-  * listed in the author list on the Zenodo DOI for the project
-    (as given in the .zenodo.json file)
-
-  * invited to co-author general code papers / proceedings describing
-    Castro, its performance, etc.  (Note: science papers will always
-    be left to the science leads to determine authorship).
-
-If a core developer is inactive for 3 years, we may reassess their
-status as a core developer.
-
-
-
-## Getting help
-
-We use Github discussions for asking general questions about the code:
-
-https://github.com/AMReX-Astro/Castro/discussions
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><a href="https://doi.org/10.5281/zenodo.2301848" rel="nofollow"><img src="https://camo.githubusercontent.com/6b257ac81d5a520e83f93d4e9a05942311d000cb8e928b3efcf584bc57668f0a/68747470733a2f2f7a656e6f646f2e6f72672f62616467652f444f492f31302e353238312f7a656e6f646f2e323330313834382e737667" alt="DOI" data-canonical-src="https://zenodo.org/badge/DOI/10.5281/zenodo.2301848.svg" style="max-width: 100%;"></a>
+<a href="https://doi.org/10.21105/joss.02513" rel="nofollow"><img src="https://camo.githubusercontent.com/9ed84eaccd0a1f02732f58d64bc859a38ad65f1b4d6bb20cfbb6adfd44315749/68747470733a2f2f6a6f73732e7468656f6a2e6f72672f7061706572732f31302e32313130352f6a6f73732e30323531332f7374617475732e737667" alt="DOI" data-canonical-src="https://joss.theoj.org/papers/10.21105/joss.02513/status.svg" style="max-width: 100%;"></a>
+<a href="https://amrex-codes.github.io" rel="nofollow"><img src="https://camo.githubusercontent.com/9ce60afa3ff35f9ded1c737fd4d01d7f5404370639d5713f70f3a99995204273/68747470733a2f2f616d7265782d636f6465732e6769746875622e696f2f6261646765732f706f776572656425323062792d414d5265582d7265642e737667" alt="AMReX" data-canonical-src="https://amrex-codes.github.io/badges/powered%20by-AMReX-red.svg" style="max-width: 100%;"></a>
+<a href="https://yt-project.org" rel="nofollow"><img src="https://camo.githubusercontent.com/532de0ea13712920c2b2f644fe425c87090486691a9b3de2bdc0a121552707ad/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f6c6162656c3d253232776f726b7325323077697468253232266d6573736167653d253232797425323226636f6c6f723d253232626c756576696f6c6574253232" alt="yt-项目" data-canonical-src="https://img.shields.io/static/v1?label=%22works%20with%22&amp;message=%22yt%22&amp;color=%22blueviolet%22" style="max-width: 100%;"></a>
+<a href="https://github.com/AMReX-Astro/Castro/actions?query=workflow%3A%22github+pages%22"><img src="https://github.com/AMReX-Astro/Castro/workflows/github%20pages/badge.svg" alt="github 页面" style="max-width: 100%;"></a>
+<a href="https://scan.coverity.com/projects/amrex-astro-castro" rel="nofollow"><img src="https://camo.githubusercontent.com/c97c5e8f7e445497a09ea73cd7c614673edb61e6cc3cc379e9844182da4b8f7c/68747470733a2f2f7363616e2e636f7665726974792e636f6d2f70726f6a656374732f32393638392f62616467652e737667" alt="覆盖性" data-canonical-src="https://scan.coverity.com/projects/29689/badge.svg" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/AMReX-Astro/Castro/blob/development/Util/logo/castro_logo_hot_200.png"><img src="https://github.com/AMReX-Astro/Castro/raw/development/Util/logo/castro_logo_hot_200.png" alt="卡斯特罗" style="max-width: 100%;"></a></p>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自适应网格、天体物理辐射流体动力学模拟代码</font></font></em></p>
+<p dir="auto"><code>Castro</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是天体物理流的自适应网格可压缩辐射/MHD/流体动力学代码。  </font></font><code>Castro</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持一般状态方程、全泊松引力和反应流，并且与 CPU 的 MPI + OpenMP 和 NVIDIA GPU 的 MPI + CUDA 以及 AMD GPU 的 MPI + HIP 并行。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关卡斯特罗的更多信息可以在这里找到：</font></font></p>
+<p dir="auto"><a href="http://amrex-astro.github.io/Castro/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://amrex-astro.github.io/Castro/</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></h2><a id="user-content-getting-started" class="anchor" aria-label="永久链接：开始使用" href="#getting-started"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户指南的“入门”部分将引导您完成第一个问题：</font></font></p>
+<p dir="auto"><a href="https://amrex-astro.github.io/Castro/docs/getting_started.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://amrex-astro.github.io/Castro/docs/getting_started.html</font></font></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这将使您克隆 Castro 及其依赖项（AMReX 和 StarKiller Microphysicals），</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户指南使用 Sphinx 以重构文本编写，源代码位于</font></font><code>Castro/Docs/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，并且是从</font></font><code>development</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分支自动构建的。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在超级计算机中心运行</font></font></h2><a id="user-content-running-at-supercomputer-centers" class="anchor" aria-label="永久链接：在超级计算机中心运行" href="#running-at-supercomputer-centers"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关在流行的超级计算中心运行 AMReX 天体物理学代码的文档，请访问：
+ https: </font></font><a href="https://amrex-astro.github.io/workflow/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">//amrex-astro.github.io/workflow/</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发模式：</font></font></h2><a id="user-content-development-model" class="anchor" aria-label="永久链接： 开发模式：" href="#development-model"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发一般遵循以下思路：</font></font></p>
+<ul dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新功能已提交给该</font></font><code>development</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分支机构。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每晚回归测试用于确保答案不会发生变化（或者如果发生变化，则变化是预期的）。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果更改很关键，我们可以选择从
+</font></font><code>development</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">到 的提交</font></font><code>main</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">欢迎任何人以针对分支的 Castro 分叉拉取请求的形式做出贡献</font></font><code>development</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+。 （如果您错误定位</font></font><code>main</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，我们可以为您更改。）</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><code>CHANGES.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果是错误修复或新功能，</font><font style="vertical-align: inherit;">请添加一行来总结您的更改。</font><font style="vertical-align: inherit;">根据需要引用 PR 或问题。此外，如果您的更改修复了错误（或者如果您发现错误但没有修复它），并且当前没有描述该错误的问题，请提交一个单独的问题来描述该错误，无论该错误有多严重。如果可能，</font></font><code>CHANGES.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请在文件和问题中分别引用引入和修复问题的拉取请求编号或 git 提交哈希值。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们将压缩合并时的提交以获得干净的历史记录。
+</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请确保您的 PR 标题和 PR 摘要字段具有描述性，因为这些将用于压缩提交消息。</font></font></em></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在每个月的第一个工作日，我们
+与</font><font style="vertical-align: inherit;">、
+ </font><font style="vertical-align: inherit;">、 和</font><font style="vertical-align: inherit;">协调执行</font></font><code>development</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">到的合并</font><font style="vertical-align: inherit;">。为了进行合并，我们需要通过回归测试。</font></font><code>main</code><font style="vertical-align: inherit;"></font><code>AMReX</code><font style="vertical-align: inherit;"></font><code>Maestro</code><font style="vertical-align: inherit;"></font><code>Microphysics</code><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><code>development</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为了满足这一需求，我们在合并日之前几天</font><font style="vertical-align: inherit;">关闭合并窗口
+。</font><font style="vertical-align: inherit;">当合并窗口关闭时，只有错误修复才应推送到
+</font></font><code>development</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.一旦从</font></font><code>development</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-&gt; 的</font><font style="vertical-align: inherit;">合并</font></font><code>main</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">完成，合并窗口将重新打开。</font></font></p>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">核心开发人员</font></font></h2><a id="user-content-core-developers" class="anchor" aria-label="永久链接：核心开发人员" href="#core-developers"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">做出多项实质性贡献的人将被命名为卡斯特罗的“核心开发者”。成为核心开发人员的标准很灵活，但通常涉及以下其中一项：</font></font></p>
+<ul dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10 个非合并承诺</font></font><code>Castro/Source/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或或不是您自己的科学问题</font><em><font style="vertical-align: inherit;">或</font></em></font><code>Castro/Docs/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+问题之一</font></font><em><font style="vertical-align: inherit;"></font></em></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加新算法/模块  </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font></em></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对代码设计过程或测试的大量投入</font></font></p>
+</li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">核心开发人员将通过以下方式获得认可：</font></font></p>
+<ul dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">受邀加入集团的 Slack 团队</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为核心开发人员列在用户指南和网站中</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">列在 Zenodo DOI 项目的作者列表中（如 .zenodo.json 文件中给出）</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">受邀共同撰写描述卡斯特罗及其表现等的一般代码论文/会议记录（注：科学论文将始终由科学领导者确定作者身份）。</font></font></p>
+</li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果核心开发人员连续 3 年不活跃，我们可能会重新评估其核心开发人员的身份。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">寻求帮助</font></font></h2><a id="user-content-getting-help" class="anchor" aria-label="永久链接：获取帮助" href="#getting-help"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们使用 Github 讨论来询问有关代码的一般问题：</font></font></p>
+<p dir="auto"><a href="https://github.com/AMReX-Astro/Castro/discussions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/AMReX-Astro/Castro/discussions</font></font></a></p>
+</article></div>
